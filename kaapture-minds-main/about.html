@@ -26,7 +26,7 @@
 
   <style>
     /* ---------- Header ---------- */
-    header {
+    /* header {
       position: fixed;
       top: 0;
       width: 100%;
@@ -34,8 +34,8 @@
       backdrop-filter: blur(5px);
       z-index: 999;
       padding: 12px 0;
-    }
-    nav ul {
+    } */
+    /* nav ul {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -50,19 +50,19 @@
     }
     nav ul li a:hover, nav ul li a.active {
       color: #b7874d;
-    }
+    } */
 
     /* Logo */
-    .logo img {
+    /* .logo img {
       width: 200px;
       filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
     }
     @media(max-width:992px) {
       .logo img { width: 150px; }
-    }
+    } */
 
     /* Contact CTA */
-    .contact-head-info a {
+    /* .contact-head-info a {
       background-color: #b7874d;
       color: white;
       padding: 10px 20px;
@@ -79,10 +79,10 @@
       font-weight: 900;
       font-size: 20px;
       margin-left: 15px;
-    }
+    } */
 
     /* Mobile Menu */
-    .responsive-mobile-menu {
+    /* .responsive-mobile-menu {
       position: fixed;
       top: 0;
       right: -100%;
@@ -101,10 +101,10 @@
       padding: 15px 0;
       font-size: 18px;
       text-decoration: none;
-    }
+    }*/
 
     /* Hamburger */
-    .menu-btn { cursor: pointer; }
+    /* .menu-btn { cursor: pointer; }
     .menu-btn span {
       display: block;
       width: 25px;
@@ -112,10 +112,10 @@
       background: #fff;
       margin: 5px 0;
       transition: 0.4s;
-    }
+    } */
 
     /* ---------- Banner ---------- */
-    .main-banner {
+    /* .main-banner {
       position: relative;
       width: 100%;
       height: 100vh;
@@ -161,7 +161,7 @@
       text-decoration: none;
       transition: background 0.3s ease;
     }
-    .lnk-default:hover { background: #9c6b3e; }
+    .lnk-default:hover { background: #9c6b3e; }*/
   </style>
 </head>
 
@@ -175,47 +175,96 @@
       <div class="cube c3"></div>
     </div>
   </div>
-
+<div class="wrapper">
   <!-- Header -->
-  <header>
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="logo">
-        <a href="index.html"><img src="assets/images/kmindss.png" alt="Kaapture Minds"></a>
-      </div>
-      <nav class="d-none d-lg-block">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="contact-head-info d-none d-lg-flex align-items-center">
-        <a href="contact.html">Let Us Connect</a>
-        <span class="search-btn"><i class="la la-search"></i></span>
-      </div>
-      <!-- Mobile Menu Button -->
-      <div class="menu-btnn d-lg-none">
-        <div class="menu-btn">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </div>
-      </div>
-    </div>
-  </header>
+ 	<header>
+			<div class="container">
+				<div class="header-content">
+					<div class="logo">
+						<a href="index.html" title="">
+							<img src="assets/images/kmindss.png" alt="">
+						</a>
+					</div><!--logo end-->
+					<nav>
+						<ul>
+							<li><a class="active" href="index.html" title="">Home</a></li>
+							<li><a  href="#" title="">About Us</a></li>
+							<li><a href="#" title="">Services</a></li>
+							<li><a href="#" title="">GCC & BPO </a>
+								
+							</li>
+							<!-- <li><a href="catalog.html" title="">Shop</a></li> -->
+							<li><a href="#" title="">Industries</a>
+							<li><a href="#" title="">Careers</a>
+								
+							</li>
+							<li><a href="#" title="">Contact</a></li>
+              <li><a href="#" class="call-to-aution">Get Started</a></li>
+						</ul>
+            	
+						
+					
 
-  <!-- Mobile Menu -->
-  <div class="responsive-mobile-menu">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
+					</nav><!--navigation end-->
+					
+				
+				<div class="menu-btnn">
+						<div class="menu-btn">
+							<span class="bar1"></span>
+							<span class="bar2"></span>
+							<span class="bar3"></span>
+						</div><!--menu-bar end-->
+					</div>
+				</div><!--header-content end-->
+			</div>
+		</header><!--header end-->
+	<div class="responsive-mobile-menu">
+		<ul>
+							<li><a class="active" href="index.html" title="">Home</a></li>
+							<li><a  href="#" title="">About Us</a></li>
+							<li><a href="#" title="">Services</a></li>
+							<li><a href="#" title="">GCC & BPO </a>
+								
+							</li>
+							<!-- <li><a href="catalog.html" title="">Shop</a></li> -->
+							<li><a href="#" title="">Industries</a>
+							<li><a href="#" title="">Careers</a>
+								
+							</li>
+							<li><a href="#" title="">Contact</a></li>
+              <li><a href="#" class="call-to-aution">Get Started</a></li>
+						</ul>
+		</div><!--responsive-mobile-menu end-->
+	<style>
+    .logo img {
+  width: 200px;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8)); /* gold glow */
+}
+@media(max-width:992px){
+	  .logo img {
+	width: 150px;
+  }
+}
+		a.call-to-aution{
+			background-color: #b7874d;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-weight: 600;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+		a.call-to-aution:hover{
+			background-color: #9c6b3e;
+			color: white;
+		}
+		.search-btn i{
+			color: #fff;
+			font-weight: 900;
+			font-size: 20px;
+		}	
+	</style>
+
+  
 
   <!-- Banner -->
   <!-- <section class="main-banner">
