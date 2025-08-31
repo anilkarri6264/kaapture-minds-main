@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kaapture Minds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Kaapture Minds – Oracle Expertise, AI-driven Solutions, GCC & BPO Excellence. Let’s shape your future together.">
+ <!-- Include Line Awesome (for icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"> 
+  <link rel="icon" href="assets/images/faviconn.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/line-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/color.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+  <style>
+    /* ---------- Header ---------- */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(5px);
+      z-index: 999;
+      padding: 12px 0;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav ul li a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover, nav ul li a.active {
+      color: #b7874d;
+    }
+
+    /* Logo */
+    .logo img {
+      width: 200px;
+      filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.8));
+    }
+    @media(max-width:992px) {
+      .logo img { width: 150px; }
+    }
+
+    /* Contact CTA */
+    .contact-head-info a {
+      background-color: #b7874d;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact-head-info a:hover {
+      background-color: #9c6b3e;
+      color: white;
+    }
+    .search-btn i {
+      color: #fff;
+      font-weight: 900;
+      font-size: 20px;
+      margin-left: 15px;
+    }
+
+    /* Mobile Menu */
+    .responsive-mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100%;
+      background: #111;
+      transition: right 0.4s ease;
+      z-index: 1000;
+      padding: 60px 20px;
+    }
+    .responsive-mobile-menu.active { right: 0; }
+    .responsive-mobile-menu ul { list-style: none; padding: 0; }
+    .responsive-mobile-menu ul li a {
+      color: #fff;
+      display: block;
+      padding: 15px 0;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    /* Hamburger */
+    .menu-btn { cursor: pointer; }
+    .menu-btn span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+
+    /* ---------- Banner ---------- */
+    .main-banner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: #fff;
+    }
+    .banner-video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .banner-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.25);
+      z-index: -1;
+    }
+    .banner-content h2 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #fff;
+    }
+    .banner-content p {
+      font-size: 18px;
+      margin: 20px 0;
+      color: #ddd;
+    }
+    .lnk-default {
+      display: inline-block;
+      background: #b7874d;
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .lnk-default:hover { background: #9c6b3e; }
+  </style>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="page-loading">
+    <div class="thecube">
+      <div class="cube c1"></div>
+      <div class="cube c2"></div>
+      <div class="cube c4"></div>
+      <div class="cube c3"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="index.html"><img src="assets/images/kmindss.png" alt="Kaapture Minds"></a>
+      </div>
+      <nav class="d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="contact-head-info d-none d-lg-flex align-items-center">
+        <a href="contact.html">Let Us Connect</a>
+        <span class="search-btn"><i class="la la-search"></i></span>
+      </div>
+      <!-- Mobile Menu Button -->
+      <div class="menu-btnn d-lg-none">
+        <div class="menu-btn">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="responsive-mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Banner -->
+  <!-- <section class="main-banner">
+    <video class="banner-video" autoplay muted loop playsinline preload="auto" poster="assets/images/banner-fallback.jpg">
+      <source src="assets/images/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="banner-overlay"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="banner-content">
+            <h2 class="wow fadeInUp" data-wow-duration="1000ms">Innovating Through Minds. Powering Intelligent Systems.</h2>
+            <p class="wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+              Oracle Expertise | AI-driven Solutions | GCC & BPO Excellence
+            </p>
+            <a href="contact.html" class="lnk-default wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+              Let’s shape your future together <i class="la la-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="block pb-0">
+			<div class="container">
+				<div class="about-us-section">
+					<div class="row align-items-center">
+						
+						<div class="col-lg-6">
+							<div class="about-text">
+								<h2 class="sub-title">Who We Are</h2>
+								<p>Kaapture Minds, we are a team of energetic and passionate professionals driven by one goal, helping businesses unlock the full potential of technology and talent. Founded by a group of Oracle specialists and industry enthusiasts, we bring decades of combined experience in Oracle ERP implementations, cloud transformations, upgrades, migrations, and strategic outsourcing.</p>
+								<p>What sets us apart is our ability to blend deep Oracle expertise, process knowledge, and people-focused delivery into solutions that truly make a difference. Whether it’s modernizing ERP systems, migrating to the cloud, or building global capability centers, we partner with clients to create scalable, future-ready enterprises.</p>
+
+							</div><!--about-text end-->
+						</div>
+						<div class="col-lg-6">
+							<div class="abt-imgz">
+								<img class="" data-wow-duration="1000ms" src="assets/images/our-a.avif" alt="">
+						
+							</div><!--abt-imgz end-->
+						</div>
+					</div>
+				</div><!--about-us-section end-->
+			</div>
+	</section>
+	
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #111;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-weight: 700;
+    }
+    .section-title span { color: #d4af37; }
+
+    /* === GRID SYSTEM === */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    /* === CARD STYLES === */
+    .card, .approach-card, .partner-card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .card:hover, .approach-card:hover, .partner-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 8px 25px rgba(212,175,55,0.35);
+    }
+    .card i, .approach-card i, .partner-card i {
+      font-size: 2.5rem;
+      color: #d4af37;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    /* === LIGHT SECTION (white background) === */
+    .light-section { background: #fff; color: #111; }
+    .light-section .card { background: #fff; border: 1px solid #eee; color: #111; }
+
+    /* === SCROLL ANIMATIONS (Unified) === */
+    .fade-item {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+    .fade-item.fade-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <!-- ✅ WHO WE ARE -->
+  <section>
+    <h2 class="section-title">Who <span>We Are</span></h2>
+    <div class="grid-3">
+      <div class="card fade-item">
+        <i class="la la-users"></i>
+        <h3>Trusted Advisors</h3>
+        <p>We combine deep industry knowledge with proven expertise to drive transformation.</p>
+      </div>
+      <div class="card fade-item">
+        <i class="la la-lightbulb"></i>
+        <h3>Innovation Driven</h3>
+        <p>Delivering smart, scalable solutions that balance today’s needs with tomorrow’s vision.</p>
+      </div>
+      <div class="card fade-item">
+        <i class="la la-globe"></i>
+        <h3>Global Perspective</h3>
+        <p>Experience across geographies ensures adaptability to local and global challenges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ OUR APPROACH -->
+  <section>
+    <h2 class="section-title">Our <span>Approach</span></h2>
+    <div class="grid-4">
+      <div class="approach-card fade-item">
+        <i class="la la-lightbulb"></i>
+        <h3>Mindset First</h3>
+        <p>We believe innovation is about mindset, not just tools.</p>
+      </div>
+      <div class="approach-card fade-item">
+        <i class="la la-project-diagram"></i>
+        <h3>Proven + Fresh</h3>
+        <p>Blending tried methods with modern ideas for relevant solutions.</p>
+      </div>
+      <div class="approach-card fade-item">
+        <i class="la la-handshake"></i>
+        <h3>True Partnership</h3>
+        <p>We co-create strategies with clients to ensure practical outcomes.</p>
+      </div>
+      <div class="approach-card fade-item">
+        <i class="la la-chart-line"></i>
+        <h3>Future Ready</h3>
+        <p>Driving measurable efficiency while preparing for global scale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ WHAT WE DO (White Background) -->
+  <section class="light-section">
+    <h2 class="section-title">What <span>We Do</span></h2>
+    <div class="grid-3">
+      <div class="card fade-item">
+        <i class="la la-database"></i>
+        <h3>Oracle ERP & Cloud</h3>
+        <p>End-to-end ERP services: implementation, upgrades, migrations, and audits.</p>
+      </div>
+      <div class="card fade-item">
+        <i class="la la-headset"></i>
+        <h3>BPO Services</h3>
+        <p>We handle finance, back-office, and support so you can focus on growth.</p>
+      </div>
+      <div class="card fade-item">
+        <i class="la la-globe"></i>
+        <h3>Global Capability Centers</h3>
+        <p>Helping you build and scale GCCs for IT, ERP, and business services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ WHY PARTNER -->
+  <section>
+    <h2 class="section-title">Why Partner with <span>Kaapture Minds</span></h2>
+    <div class="grid-4">
+      <div class="partner-card fade-item">
+        <i class="la la-award"></i>
+        <h3>Oracle Expertise</h3>
+        <p>Decades of ERP and Fusion Cloud transformation experience.</p>
+      </div>
+      <div class="partner-card fade-item">
+        <i class="la la-hand-holding-usd"></i>
+        <h3>Cost-Effective</h3>
+        <p>Solutions tailored to business goals and budgets.</p>
+      </div>
+      <div class="partner-card fade-item">
+        <i class="la la-users-cog"></i>
+        <h3>People-First</h3>
+        <p>Transparent, collaborative, and outcome-driven engagements.</p>
+      </div>
+      <div class="partner-card fade-item">
+        <i class="la la-globe-americas"></i>
+        <h3>Global Delivery</h3>
+        <p>Scalable delivery model with outsourcing and GCC capability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ JS Scroll Animation (Single Unified Script) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const fadeItems = document.querySelectorAll(".fade-item");
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      fadeItems.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</div><!--wrapper end-->
+	
+
+
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/plugin/slick.min.js"></script>
+<script src="assets/js/plugin/html5lightbox.js"></script>
+<script src="assets/js/placeholdem.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
